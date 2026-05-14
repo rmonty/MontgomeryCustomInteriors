@@ -1,10 +1,10 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Book Online | Montgomery Custom Interiors</title>
-    <meta name="description" content="Request a consultation or project call.">
+    <meta name="description" content="Book a consultation with Montgomery Custom Interiors.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
@@ -12,59 +12,75 @@
   </head>
   <body>
     <div class="site-shell">
+
       <header class="topbar">
         <div class="container topbar-inner">
-          <a class="brand" href="index.html"><span class="brand-mark">M</span><span><strong>Montgomery Custom Interiors</strong><span>Interior design, staging, and finish selection</span></span></a>
+          <a class="brand" href="index.html">
+            <img class="brand-logo" src="https://static.wixstatic.com/media/d389cb_c6cc45f85e6947f19d7e329a2e60c5ee~mv2.png" alt="Montgomery Custom Interiors">
+          </a>
           <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">Menu</button>
           <nav id="primary-nav" class="nav" data-nav data-open="false">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
             <a href="projects.html">Projects</a>
             <a href="testimonials.html">Testimonials</a>
-            <a href="booking.html">Book Online</a>
-            <a href="contact.html">Contact</a>
+            <a href="booking.html" aria-current="page">Book Online</a>
           </nav>
         </div>
       </header>
 
-      <main class="container">
-        <section class="page-header fade-in">
-          <span class="eyebrow">Book online</span>
-          <h1 class="section-title" style="margin-top: 0.75rem;">Lead capture without committing to a backend yet.</h1>
-          <p class="intro">This form is implemented as a static starting point. If the site needs stored submissions or admin review, Firebase can be added later without changing the page structure.</p>
-        </section>
+      <main>
+        <div class="container">
+          <div class="page-header fade-in">
+            <span class="eyebrow">Book Online</span>
+            <h1 class="section-title" style="margin-top:0.75rem;">Schedule a Consultation</h1>
+          </div>
 
-        <section class="section form-card fade-in">
-          <form class="form-grid" action="mailto:hello@montgomerycustominteriors.com" method="post" enctype="text/plain">
-            <div class="field">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" placeholder="Your name">
+          <div class="booking-card fade-in">
+            <h2>Consultation</h2>
+            <div class="booking-meta">
+              <span>1 hr</span>
+              <span>&bull;</span>
+              <span>Prices Vary</span>
             </div>
-            <div class="field">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" placeholder="you@example.com">
-            </div>
-            <div class="field">
-              <label for="project-type">Project type</label>
-              <input id="project-type" name="project-type" type="text" placeholder="Living room refresh, staging, renovation support...">
-            </div>
-            <div class="field">
-              <label for="timeline">Timeline</label>
-              <input id="timeline" name="timeline" type="text" placeholder="ASAP, next month, planning for summer...">
-            </div>
-            <div class="field full">
-              <label for="details">Project details</label>
-              <textarea id="details" name="details" placeholder="Tell us what you need help with."></textarea>
-            </div>
-            <div class="field full">
-              <button class="button button-primary" type="submit">Send request</button>
-              <p class="helper">If form persistence becomes important, this is the place to add Firebase or another backend form service.</p>
-            </div>
-          </form>
-        </section>
+            <p>
+              Ready to transform your space? Book a consultation today and let's talk about your
+              interior design goals.
+            </p>
+            <a class="button button-primary"
+              href="https://www.montgomerycustominteriors.com/booking-calendar/consultation-1"
+              target="_blank" rel="noopener">
+              Book Now
+            </a>
+          </div>
+
+          <div style="text-align:center; margin-top:2.5rem; margin-bottom:3rem; color:var(--muted);">
+            <p>Prefer to call? Reach Alisa directly at <a class="contact-phone" href="tel:4693380880" style="font-size:1rem;">(469) 338-0880</a></p>
+          </div>
+        </div>
       </main>
 
-      <footer class="footer"><div class="container footer-inner"><div>Montgomery Custom Interiors</div><div><a href="contact.html">Prefer direct contact?</a></div></div></footer>
+      <footer class="footer">
+        <div class="container footer-inner">
+          <div>
+            <div class="footer-brand">
+              <img class="footer-logo" src="https://static.wixstatic.com/media/d389cb_c6cc45f85e6947f19d7e329a2e60c5ee~mv2.png" alt="Montgomery Custom Interiors">
+            </div>
+            <div class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="services.html">Services</a>
+              <a href="projects.html">Projects</a>
+              <a href="testimonials.html">Testimonials</a>
+              <a href="booking.html">Book Online</a>
+              <a href="https://www.facebook.com/montgomerycustominteriors" target="_blank" rel="noopener">Facebook</a>
+            </div>
+          </div>
+          <div style="text-align:right;">
+            <a class="contact-phone" href="tel:4693380880" style="font-size:1.1rem;">(469) 338-0880</a>
+            <p style="margin:0.5rem 0 0; font-size:0.85rem; color:var(--muted);">©2018 BY MONTGOMERY CUSTOM INTERIORS</p>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="app.js"></script>
   </body>
