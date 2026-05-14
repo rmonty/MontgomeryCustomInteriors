@@ -16,7 +16,7 @@
       <header class="topbar">
         <div class="container topbar-inner">
           <a class="brand" href="index.html">
-            <img class="brand-logo" src="https://static.wixstatic.com/media/d389cb_c6cc45f85e6947f19d7e329a2e60c5ee~mv2.png" alt="Montgomery Custom Interiors">
+            <img class="brand-logo" src="images/logo.png" alt="Montgomery Custom Interiors">
           </a>
           <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">Menu</button>
           <nav id="primary-nav" class="nav" data-nav data-open="false">
@@ -47,15 +47,32 @@
               Ready to transform your space? Book a consultation today and let's talk about your
               interior design goals.
             </p>
-            <a class="button button-primary"
-              href="https://www.montgomerycustominteriors.com/booking-calendar/consultation-1"
-              target="_blank" rel="noopener">
-              Book Now
+            <a class="button button-primary" href="tel:4693380880">
+              Call (469) 338-0880
             </a>
+            <p style="margin:1.2rem 0 0; color:var(--muted); font-size:0.95rem;">Or send a message below and Alisa will follow up to schedule.</p>
           </div>
 
-          <div style="text-align:center; margin-top:2.5rem; margin-bottom:3rem; color:var(--muted);">
-            <p>Prefer to call? Reach Alisa directly at <a class="contact-phone" href="tel:4693380880" style="font-size:1rem;">(469) 338-0880</a></p>
+          <!-- Booking request form - replace YOUR_FORM_ID after signing up at formspree.io -->
+          <div class="form-card fade-in" style="max-width:560px; margin:2rem auto;">
+            <h3 style="margin:0 0 1rem; font-family:'Playfair Display',Georgia,serif;">Request a Consultation</h3>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <input type="hidden" name="_subject" value="Consultation Request - Montgomery Custom Interiors">
+              <div class="form-grid">
+                <div class="field"><label for="b-fn">First Name</label><input id="b-fn" name="first_name" type="text" autocomplete="given-name" required></div>
+                <div class="field"><label for="b-ln">Last Name</label><input id="b-ln" name="last_name" type="text" autocomplete="family-name" required></div>
+                <div class="field full"><label for="b-em">Email</label><input id="b-em" name="email" type="email" autocomplete="email" required></div>
+                <div class="field full"><label for="b-ph">Phone</label><input id="b-ph" name="phone" type="tel" autocomplete="tel"></div>
+                <div class="field full"><label for="b-msg">Tell me about your project</label><textarea id="b-msg" name="message" rows="5"></textarea></div>
+              </div>
+              <div style="margin-top:1rem;">
+                <button class="button button-primary" type="submit">Send Request</button>
+              </div>
+            </form>
+          </div>
+
+          <div style="text-align:center; margin-bottom:3rem; color:var(--muted); font-size:0.9rem;">
+            <p>&#x1F4CD; Serving Heath, Rockwall, Rowlett, Wylie, and surrounding areas</p>
           </div>
         </div>
       </main>
@@ -64,7 +81,7 @@
         <div class="container footer-inner">
           <div>
             <div class="footer-brand">
-              <img class="footer-logo" src="https://static.wixstatic.com/media/d389cb_c6cc45f85e6947f19d7e329a2e60c5ee~mv2.png" alt="Montgomery Custom Interiors">
+              <img class="footer-logo" src="images/logo.png" alt="Montgomery Custom Interiors">
             </div>
             <div class="footer-links">
               <a href="index.html">Home</a>
