@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   color-scheme: light;
   --bg: #f6efe8;
   --bg-alt: #f2e7dc;
@@ -26,7 +26,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'DM Sans', system-ui, sans-serif;
+  font-family: 'Open Sans', system-ui, sans-serif;
   color: var(--text);
   background:
     radial-gradient(circle at top left, rgba(215, 181, 156, 0.34), transparent 34%),
@@ -181,7 +181,7 @@ img {
 .hero h1,
 .section-title {
   margin: 0;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Jost', system-ui, sans-serif;
   line-height: 0.96;
   letter-spacing: -0.03em;
 }
@@ -299,7 +299,7 @@ img {
 
 .metric strong {
   display: block;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Jost', system-ui, sans-serif;
   font-size: 1.8rem;
 }
 
@@ -362,7 +362,7 @@ img {
 .content-card h3,
 .panel h3 {
   margin: 0 0 0.65rem;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Jost', system-ui, sans-serif;
   font-size: 1.4rem;
 }
 
@@ -415,7 +415,7 @@ img {
   position: absolute;
   top: -0.2rem;
   right: 1rem;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Jost', system-ui, sans-serif;
   font-size: 7rem;
   line-height: 1;
   color: rgba(138, 90, 60, 0.1);
@@ -604,7 +604,7 @@ img {
 
 .photo-hero-overlay h1 {
   margin: 0.5rem 0 0.6rem;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Jost', system-ui, sans-serif;
   font-size: clamp(2rem, 5vw, 3.6rem);
   letter-spacing: -0.02em;
   line-height: 1.1;
@@ -612,11 +612,13 @@ img {
 }
 
 .photo-hero-overlay .tagline {
-  font-size: 1.12rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.4rem;
+  font-weight: 600;
   opacity: 0.9;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.85);
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: rgba(255,255,255,0.9);
 }
 
 /* ── About section ── */
@@ -638,7 +640,7 @@ img {
 
 .about-body h2 {
   margin: 0 0 1rem;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Jost', system-ui, sans-serif;
   font-size: clamp(1.8rem, 3vw, 2.6rem);
   letter-spacing: -0.02em;
 }
@@ -707,7 +709,7 @@ img {
 
 .featured-card-body h3 {
   margin: 0 0 0.7rem;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Jost', system-ui, sans-serif;
   font-size: 1.25rem;
 }
 
@@ -755,7 +757,7 @@ img {
 
 .offer-item h3 {
   margin: 0 0 0.55rem;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Jost', system-ui, sans-serif;
   font-size: 1.05rem;
 }
 
@@ -804,7 +806,7 @@ img {
 
 .service-body h2 {
   margin: 0 0 1rem;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Jost', system-ui, sans-serif;
   font-size: clamp(1.5rem, 2.5vw, 2rem);
 }
 
@@ -844,7 +846,7 @@ img {
 
 .project-item h2 {
   margin: 0 0 0.5rem;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Jost', system-ui, sans-serif;
   font-size: clamp(1.5rem, 3vw, 2.2rem);
 }
 
@@ -939,7 +941,7 @@ img {
   position: absolute;
   top: -0.5rem;
   right: 1.2rem;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Jost', system-ui, sans-serif;
   font-size: 8rem;
   line-height: 1;
   color: rgba(138,90,60,0.1);
@@ -971,7 +973,7 @@ img {
 
 .contact-info h2 {
   margin: 0 0 1rem;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Jost', system-ui, sans-serif;
   font-size: clamp(1.6rem, 3vw, 2.4rem);
 }
 
@@ -1040,7 +1042,7 @@ img {
 
 .booking-card h2 {
   margin: 0 0 0.5rem;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Jost', system-ui, sans-serif;
   font-size: 1.8rem;
 }
 
