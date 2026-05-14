@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Booking Calendar | Montgomery Custom Interiors</title>
+    <meta name="description" content="Static booking calendar placeholder for consultations.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="container topbar-inner">
+          <a class="brand" href="index.html"><span class="brand-mark">M</span><span><strong>Montgomery Custom Interiors</strong><span>Interior design, staging, and finish selection</span></span></a>
+          <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">Menu</button>
+          <nav id="primary-nav" class="nav" data-nav data-open="false">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="booking.html">Book Online</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="container">
+        <section class="page-header fade-in">
+          <span class="eyebrow">Booking calendar</span>
+          <h1 class="section-title" style="margin-top: 0.75rem;">Reserve a consultation window.</h1>
+          <p class="intro">This static calendar mirrors the booking experience without requiring a backend yet. A real scheduler can be connected later if the feature becomes necessary.</p>
+        </section>
+
+        <section class="section grid grid-3">
+          <article class="card fade-in"><span class="tag">Monday</span><h3>Morning</h3><p>Discovery calls and short project reviews.</p></article>
+          <article class="card fade-in"><span class="tag">Wednesday</span><h3>Afternoon</h3><p>Design consults, selection reviews, and scope discussion.</p></article>
+          <article class="card fade-in"><span class="tag">Friday</span><h3>Flexible</h3><p>Follow-up meetings and install planning.</p></article>
+        </section>
+
+        <section class="section grid grid-2">
+          <article class="panel fade-in">
+            <span class="eyebrow">How booking works</span>
+            <h3>Choose a window, then send the details.</h3>
+            <p>For now, the workflow is informational: pick a general time block, then use the booking form or contact page to describe the project.</p>
+          </article>
+          <article class="panel fade-in">
+            <span class="eyebrow">Later option</span>
+            <h3>Firebase can store appointments if needed.</h3>
+            <p>If online scheduling becomes a requirement, this page is a natural place to wire in Firestore, auth, or a third-party scheduling service.</p>
+          </article>
+        </section>
+      </main>
+
+      <footer class="footer"><div class="container footer-inner"><div>Montgomery Custom Interiors</div><div><a href="booking.html">Open booking form</a></div></div></footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

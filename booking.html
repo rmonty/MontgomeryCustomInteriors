@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book Online | Montgomery Custom Interiors</title>
+    <meta name="description" content="Request a consultation or project call.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="container topbar-inner">
+          <a class="brand" href="index.html"><span class="brand-mark">M</span><span><strong>Montgomery Custom Interiors</strong><span>Interior design, staging, and finish selection</span></span></a>
+          <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">Menu</button>
+          <nav id="primary-nav" class="nav" data-nav data-open="false">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="booking.html">Book Online</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="container">
+        <section class="page-header fade-in">
+          <span class="eyebrow">Book online</span>
+          <h1 class="section-title" style="margin-top: 0.75rem;">Lead capture without committing to a backend yet.</h1>
+          <p class="intro">This form is implemented as a static starting point. If the site needs stored submissions or admin review, Firebase can be added later without changing the page structure.</p>
+        </section>
+
+        <section class="section form-card fade-in">
+          <form class="form-grid" action="mailto:hello@montgomerycustominteriors.com" method="post" enctype="text/plain">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name">
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com">
+            </div>
+            <div class="field">
+              <label for="project-type">Project type</label>
+              <input id="project-type" name="project-type" type="text" placeholder="Living room refresh, staging, renovation support...">
+            </div>
+            <div class="field">
+              <label for="timeline">Timeline</label>
+              <input id="timeline" name="timeline" type="text" placeholder="ASAP, next month, planning for summer...">
+            </div>
+            <div class="field full">
+              <label for="details">Project details</label>
+              <textarea id="details" name="details" placeholder="Tell us what you need help with."></textarea>
+            </div>
+            <div class="field full">
+              <button class="button button-primary" type="submit">Send request</button>
+              <p class="helper">If form persistence becomes important, this is the place to add Firebase or another backend form service.</p>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <footer class="footer"><div class="container footer-inner"><div>Montgomery Custom Interiors</div><div><a href="contact.html">Prefer direct contact?</a></div></div></footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
