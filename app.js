@@ -1,32 +1,7 @@
 const navToggle = document.querySelector('[data-nav-toggle]');
 const nav = document.querySelector('[data-nav]');
 
-const navItems = [
-  { label: 'Home', href: 'index.html' },
-  { label: 'Book Online', href: 'booking.html' },
-  { label: 'Booking Calendar', href: 'booking-calendar.html' },
-  { label: 'Booking Form', href: 'booking-form.html' },
-  { label: 'Cart Page', href: 'cart.html' },
-  { label: 'Checkout', href: 'checkout.html' },
-  { label: 'My Account', href: 'my-account.html' },
-  { label: 'My Addresses', href: 'my-addresses.html' },
-  { label: 'My Bookings', href: 'my-bookings.html' },
-  { label: 'My Orders', href: 'my-orders.html' },
-  { label: 'My Subscriptions', href: 'my-subscriptions.html' },
-  { label: 'My Wallet', href: 'my-wallet.html' },
-  { label: 'Projects', href: 'projects.html' },
-  { label: 'Service Page', href: 'service-page.html' },
-  { label: 'Services', href: 'services.html' },
-  { label: 'Side Cart', href: 'side-cart.html' },
-  { label: 'Testimonials', href: 'testimonials.html' },
-  { label: 'Thank You Page', href: 'thank-you.html' },
-];
-
 if (navToggle && nav) {
-  nav.innerHTML = navItems
-    .map((item) => `<a href="${item.href}">${item.label}</a>`)
-    .join('');
-
   navToggle.addEventListener('click', () => {
     const isOpen = nav.getAttribute('data-open') === 'true';
     nav.setAttribute('data-open', String(!isOpen));
