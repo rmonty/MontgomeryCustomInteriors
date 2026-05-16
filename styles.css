@@ -101,6 +101,7 @@ img {
   height: 52px;
   width: auto;
   display: block;
+  filter: brightness(0) opacity(0.88);
 }
 
 .nav-toggle {
@@ -1003,6 +1004,7 @@ img {
 
 .footer-logo {
   height: 36px;
+  filter: brightness(0) opacity(0.88);
   width: auto;
 }
 
