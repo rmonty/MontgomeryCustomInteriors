@@ -2,17 +2,17 @@
   color-scheme: light;
   --bg: #f6efe8;
   --bg-alt: #f2e7dc;
-  --card: rgba(255, 255, 255, 0.72);
+  --card: #fff;
   --text: #1f1a17;
   --muted: #6d6157;
   --line: rgba(31, 26, 23, 0.12);
   --accent: #8a5a3c;
   --accent-deep: #5e3924;
   --accent-soft: #d7b59c;
-  --shadow: 0 24px 70px rgba(70, 43, 28, 0.14);
-  --radius-xl: 32px;
-  --radius-lg: 24px;
-  --radius-md: 18px;
+  --shadow: 0 2px 16px rgba(70, 43, 28, 0.08);
+  --radius-xl: 16px;
+  --radius-lg: 12px;
+  --radius-md: 8px;
   --content-width: 1180px;
 }
 
@@ -27,24 +27,9 @@ html {
 body {
   margin: 0;
   font-family: 'Open Sans', system-ui, sans-serif;
+  font-weight: 300;
   color: var(--text);
-  background:
-    radial-gradient(circle at top left, rgba(215, 181, 156, 0.34), transparent 34%),
-    radial-gradient(circle at right 14%, rgba(138, 90, 60, 0.18), transparent 28%),
-    linear-gradient(180deg, #fbf7f2 0%, var(--bg) 42%, #f4eadf 100%);
-}
-
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.32) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.32) 1px, transparent 1px);
-  background-size: 84px 84px;
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.22), transparent 68%);
-  opacity: 0.34;
+  background: #faf8f5;
 }
 
 a {
@@ -71,14 +56,16 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;
-  padding: 0.55rem 0.9rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.45);
+  padding: 0.45rem 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
   color: var(--accent-deep);
-  font-size: 0.84rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.9rem;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  text-transform: none;
 }
 
 .eyebrow::before {
@@ -93,9 +80,8 @@ img {
   position: sticky;
   top: 0;
   z-index: 30;
-  backdrop-filter: blur(24px);
-  background: rgba(247, 239, 232, 0.72);
-  border-bottom: 1px solid rgba(31, 26, 23, 0.08);
+  background: rgba(250, 248, 245, 0.94);
+  border-bottom: 1px solid rgba(31, 26, 23, 0.06);
 }
 
 .topbar-inner {
@@ -115,7 +101,6 @@ img {
   height: 52px;
   width: auto;
   display: block;
-  filter: brightness(0) opacity(0.88);
 }
 
 .nav-toggle {
@@ -126,7 +111,7 @@ img {
   height: 2.6rem;
   border: 1px solid var(--line);
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.72);
+  background: #fff;
   color: var(--text);
   font-size: 1.3rem;
   line-height: 1;
@@ -141,20 +126,21 @@ img {
 
 .nav a {
   padding: 0.55rem 0.9rem;
-  border-radius: 999px;
-  font-family: 'Jost', system-ui, sans-serif;
-  font-size: 0.82rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.88rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: none;
   color: var(--muted);
-  transition: background 180ms ease, color 180ms ease;
+  transition: border-color 180ms ease, color 180ms ease;
 }
 
 .nav a:hover,
 .nav a[aria-current='page'] {
-  background: rgba(138, 90, 60, 0.12);
   color: var(--accent-deep);
+  border-bottom: 2px solid var(--accent);
 }
 
 .hero {
@@ -175,9 +161,8 @@ img {
 .quote,
 .form-card,
 .content-card {
-  border: 1px solid rgba(31, 26, 23, 0.09);
-  background: var(--card);
-  backdrop-filter: blur(18px);
+  border: 1px solid rgba(31, 26, 23, 0.08);
+  background: #fff;
   box-shadow: var(--shadow);
 }
 
@@ -189,14 +174,14 @@ img {
 .hero h1,
 .section-title {
   margin: 0;
-  font-family: 'Jost', system-ui, sans-serif;
-  line-height: 0.96;
-  letter-spacing: -0.03em;
+  font-family: 'Playfair Display', Georgia, serif;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
 }
 
 .hero h1 {
   max-width: 10ch;
-  font-size: clamp(3.3rem, 8vw, 6.2rem);
+  font-size: clamp(3rem, 7vw, 5.5rem);
 }
 
 .hero p {
@@ -204,7 +189,8 @@ img {
   margin: 1.3rem 0 0;
   color: var(--muted);
   font-size: 1.08rem;
-  line-height: 1.75;
+  font-weight: 300;
+  line-height: 1.8;
 }
 
 .hero-actions {
@@ -220,10 +206,12 @@ img {
   justify-content: center;
   gap: 0.65rem;
   min-height: 3.15rem;
-  padding: 0.88rem 1.35rem;
-  border-radius: 999px;
+  padding: 0.88rem 1.6rem;
+  border-radius: 8px;
   border: 1px solid transparent;
-  font-weight: 700;
+  font-weight: 400;
+  font-family: 'Playfair Display', Georgia, serif;
+  letter-spacing: 0.03em;
   transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
 }
 
@@ -238,7 +226,7 @@ img {
 }
 
 .button-secondary {
-  background: rgba(255, 255, 255, 0.6);
+  background: #fff;
   border-color: var(--line);
   color: var(--text);
 }
@@ -307,7 +295,7 @@ img {
 
 .metric strong {
   display: block;
-  font-family: 'Jost', system-ui, sans-serif;
+  font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.8rem;
 }
 
@@ -317,7 +305,7 @@ img {
 }
 
 .section {
-  padding: 2.4rem 0;
+  padding: 5rem 0;
 }
 
 .section-heading {
@@ -325,7 +313,7 @@ img {
   align-items: end;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 2.4rem;
 }
 
 .section-title {
@@ -370,7 +358,7 @@ img {
 .content-card h3,
 .panel h3 {
   margin: 0 0 0.65rem;
-  font-family: 'Jost', system-ui, sans-serif;
+  font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.4rem;
 }
 
@@ -419,11 +407,11 @@ img {
 }
 
 .quote::before {
-  content: '“';
+  content: '"';
   position: absolute;
   top: -0.2rem;
   right: 1rem;
-  font-family: 'Jost', system-ui, sans-serif;
+  font-family: 'Playfair Display', Georgia, serif;
   font-size: 7rem;
   line-height: 1;
   color: rgba(138, 90, 60, 0.1);
@@ -463,9 +451,9 @@ img {
   width: 100%;
   min-height: 3.2rem;
   padding: 0.9rem 1rem;
-  border-radius: 18px;
+  border-radius: 8px;
   border: 1px solid rgba(31, 26, 23, 0.14);
-  background: rgba(255, 255, 255, 0.76);
+  background: #fff;
   font: inherit;
   color: var(--text);
 }
@@ -482,7 +470,7 @@ img {
 }
 
 .page-header {
-  padding: 2.2rem 0 0.6rem;
+  padding: 4rem 0 1.2rem;
 }
 
 .page-header .intro {
@@ -621,13 +609,12 @@ img {
 }
 
 .photo-hero-overlay .tagline {
-  font-family: 'Dancing Script', cursive;
-  font-size: 1.4rem;
-  font-weight: 600;
-  opacity: 0.9;
-  letter-spacing: 0.02em;
-  text-transform: none;
-  color: rgba(255,255,255,0.9);
+  font-family: 'Open Sans', system-ui, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.85);
 }
 
 /* ── About section ── */
@@ -649,9 +636,9 @@ img {
 
 .about-body h2 {
   margin: 0 0 1rem;
-  font-family: 'Jost', system-ui, sans-serif;
+  font-family: 'Playfair Display', Georgia, serif;
   font-size: clamp(1.8rem, 3vw, 2.6rem);
-  letter-spacing: -0.02em;
+  letter-spacing: 0.01em;
 }
 
 .about-body p {
@@ -664,7 +651,7 @@ img {
   margin: 1.5rem 0;
   padding: 1.25rem 1.5rem;
   border-left: 3px solid var(--accent);
-  background: rgba(255,255,255,0.55);
+  background: #fff;
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
   font-style: italic;
   color: var(--muted);
@@ -690,9 +677,9 @@ img {
 .featured-card {
   border-radius: var(--radius-lg);
   overflow: hidden;
-  border: 1px solid rgba(31,26,23,0.09);
-  background: var(--card);
-  box-shadow: var(--shadow);
+  border: 1px solid rgba(31,26,23,0.08);
+  background: #fff;
+  box-shadow: 0 2px 16px rgba(70,43,28,0.06);
 }
 
 .featured-card-img {
@@ -718,7 +705,7 @@ img {
 
 .featured-card-body h3 {
   margin: 0 0 0.7rem;
-  font-family: 'Jost', system-ui, sans-serif;
+  font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.25rem;
 }
 
@@ -757,16 +744,16 @@ img {
 }
 
 .offer-item {
-  padding: 1.4rem 1.2rem;
+  padding: 1.6rem 1.4rem;
   border-radius: var(--radius-md);
-  border: 1px solid rgba(31,26,23,0.09);
-  background: var(--card);
-  box-shadow: 0 8px 24px rgba(70,43,28,0.08);
+  border: 1px solid rgba(31,26,23,0.08);
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(70,43,28,0.04);
 }
 
 .offer-item h3 {
   margin: 0 0 0.55rem;
-  font-family: 'Jost', system-ui, sans-serif;
+  font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.05rem;
 }
 
@@ -815,7 +802,7 @@ img {
 
 .service-body h2 {
   margin: 0 0 1rem;
-  font-family: 'Jost', system-ui, sans-serif;
+  font-family: 'Playfair Display', Georgia, serif;
   font-size: clamp(1.5rem, 2.5vw, 2rem);
 }
 
@@ -855,7 +842,7 @@ img {
 
 .project-item h2 {
   margin: 0 0 0.5rem;
-  font-family: 'Jost', system-ui, sans-serif;
+  font-family: 'Playfair Display', Georgia, serif;
   font-size: clamp(1.5rem, 3vw, 2.2rem);
 }
 
@@ -950,7 +937,7 @@ img {
   position: absolute;
   top: -0.5rem;
   right: 1.2rem;
-  font-family: 'Jost', system-ui, sans-serif;
+  font-family: 'Playfair Display', Georgia, serif;
   font-size: 8rem;
   line-height: 1;
   color: rgba(138,90,60,0.1);
@@ -982,7 +969,7 @@ img {
 
 .contact-info h2 {
   margin: 0 0 1rem;
-  font-family: 'Jost', system-ui, sans-serif;
+  font-family: 'Playfair Display', Georgia, serif;
   font-size: clamp(1.6rem, 3vw, 2.4rem);
 }
 
@@ -1017,7 +1004,6 @@ img {
 .footer-logo {
   height: 36px;
   width: auto;
-  filter: brightness(0) opacity(0.88);
 }
 
 .footer-links {
@@ -1051,7 +1037,7 @@ img {
 
 .booking-card h2 {
   margin: 0 0 0.5rem;
-  font-family: 'Jost', system-ui, sans-serif;
+  font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.8rem;
 }
 
